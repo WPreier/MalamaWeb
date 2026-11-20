@@ -141,6 +141,11 @@
     const high = low + 50;
     document.getElementById("result-price").textContent = low + "–" + high + " €";
     document.getElementById("result-tags").innerHTML = [...new Set(tags)].map((t) => `<span class="tag">✓ ${t}</span>`).join("");
+    const cta = document.getElementById("result-cta");
+    if (cta) {
+      const summary = "Orientierung aus dem Kostenkompass: " + low + "–" + high + " € / Monat. Bausteine: " + [...new Set(tags)].join(", ");
+      cta.href = "kontakt.html?topic=" + encodeURIComponent("Kosten / Einschätzung") + "&message=" + encodeURIComponent(summary);
+    }
     elResult.classList.add("visible");
     renderStepper();
     elResult.scrollIntoView({ behavior: "smooth", block: "start" });

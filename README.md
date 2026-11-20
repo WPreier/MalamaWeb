@@ -1,31 +1,42 @@
 # MalamaWeb
 
-Website-Quellen, Dokumentation und Kalkulationen für **Malama IT GmbH** (Pilgersdorf, Österreich).
+Website-Quellen, Dokumentation und Kalkulationen für **Malama IT GmbH** (Pilgersdorf / Wolkersdorf, Ostösterreich).
 
-Malama IT bietet IT-Dienstleistungen mit dem Anspruch: „IT, die sich kümmert“.
+**Aktuelle Version: [0.1.1](CHANGELOG.md)** (2026-11-20)  
+Claim: „IT, die sich kümmert“.
+
+## Dokumentation
+
+| Datei | Inhalt |
+|---|---|
+| [docs/PROJEKTDOKUMENTATION.md](docs/PROJEKTDOKUMENTATION.md) | Was wo liegt, Deploy, typische Aufgaben |
+| [docs/VERSIONIERUNG.md](docs/VERSIONIERUNG.md) | Versionsnummern, Changelog-Ablauf |
+| [CHANGELOG.md](CHANGELOG.md) | Alle Änderungen mit Datum und Nummer |
+| [VERSION](VERSION) | Aktuelle Versionsnummer (eine Zeile) |
 
 ## Struktur
 
-- `theweb/` – Statische Website (HTML, CSS, JS, Assets)
-  - `index.html` – Startseite
-  - `hosting.html`, `referenzen.html`, `impressum.html`
-  - `assets/` – Styles, Skripte und Bilder
-- `docs/` – Feedback-Dokumente, Website-Entwürfe (PDF), Rechnungsunterlagen
+- `theweb/` – Statische Website (**Deploy-Inhalt**)
+- `docs/` – Feedback, Entwürfe, Projektdoku
 - `calc/` – Excel-Kalkulationen (Hosting, Server)
-- `Malama_Logo/` – Logos und Vorlagen in verschiedenen Formaten
+- `Malama_Logo/` – Logos und Vorlagen
 
-## Versionierung
+## Online stellen (Deploy)
 
-Dieses Repository dient der Versionierung aller Quelldateien und Unterlagen des Malama-Web-Projekts.
+Inhalt von `theweb/` in den Webroot von **https://malama.at/** kopieren.  
+Details: [docs/PROJEKTDOKUMENTATION.md](docs/PROJEKTDOKUMENTATION.md#3-online-stellen-deploy).
 
-## Lokale Entwicklung
-
-Die Website ist statisch. Einfach `theweb/index.html` im Browser öffnen oder einen lokalen Server verwenden:
+## Lokale Vorschau
 
 ```bash
 cd theweb
-python3 -m http.server 8000
+npx --yes serve -p 8000
 ```
+
+## GitHub
+
+Repository: https://github.com/WPreier/MalamaWeb  
+Branch: `main`
 
 ## Lizenz
 
