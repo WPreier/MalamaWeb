@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hosting-Kalkulation – Malama IT</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/images/malama_it_logo_light.jpg" alt="Malama IT" class="logo-img logo-img-light">
+        <img src="assets/images/malama_it_logo_dark.jpg" alt="Malama IT" class="logo-img logo-img-dark">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html#leistungen">Leistungen</a></li>
+          <li><a href="index.html#ueber-uns">Über uns</a></li>
+          <li><a href="hosting.html">Lösungen</a></li>
+          <li><a href="impressum.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="header-controls">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Dark/Light Mode">🌙</button>
+        <a href="https://ppc.at" target="_blank" rel="noopener" class="ppc-logo">
+          <img src="assets/images/ppc_logo.jpg" alt="PPC">
+        </a>
+        <a href="impressum.html" class="btn btn-sm">Jetzt anfragen →</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <h2>Hosting-Kosten kalkulieren</h2>
+        <p>Geben Sie die gewünschten Mengen ein. Die Preise gelten pro Monat (VK). Beispiele können als Vorlage geladen werden.</p>
+
+        <div class="calc-toolbar">
+          <label for="example-select">Beispiel:</label>
+          <select id="example-select"></select>
+          <button type="button" id="btn-reset" class="btn btn-outline">Zurücksetzen</button>
+        </div>
+
+        <div id="max-warning" class="max-warning" style="display:none;">
+          Mindestens eine Menge überschreitet das verfügbare Maximum. Bitte anpassen.
+        </div>
+
+        <div class="calc-table-wrap">
+          <table class="calc-table" id="calc-table">
+            <thead>
+              <tr>
+                <th>Position</th>
+                <th>Preis / Monat</th>
+                <th>Menge</th>
+                <th>Summe</th>
+              </tr>
+            </thead>
+            <tbody id="calc-body"></tbody>
+            <tfoot>
+              <tr class="total-row">
+                <td colspan="3"><strong>Gesamt pro Monat (VK)</strong></td>
+                <td><strong id="grand-total">0,00 €</strong></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <p class="calc-note">Hinweis: Preise und Maxima basieren auf der internen Hosting-Kalkulation. Überschreitungen sind farblich markiert. Für ein verbindliches Angebot kontaktieren Sie uns bitte.</p>
+      </div>
+    </section>
+  </main>
+
+    <div class="footer-hero"></div>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="assets/images/Malama_IT_Logo_1c_weiss.png" alt="Malama IT">
+          <div class="footer-contact">
+            <p><strong>Malama IT GmbH</strong></p>
+            <p><a href="mailto:info@malama.at">info@malama.at</a><br>
+            <a href="tel:+436703592519">0670 / 35 92 519</a></p>
+            <p>Sportplatzgasse 3 | 7441 Pilgersdorf<br>
+            Resselstraße 16 | B1.03.10 | 2120 Wolkersdorf</p>
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Start</a>
+          <a href="hosting.html">Hosting</a>
+          <a href="referenzen.html">Referenzen</a>
+          <a href="impressum.html">Impressum</a>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 Malama IT GmbH · Made with Grok</div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/hosting-calc.js"></script>
+</body>
+</html>
