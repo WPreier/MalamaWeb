@@ -9,6 +9,22 @@ Regeln siehe [docs/VERSIONIERUNG.md](docs/VERSIONIERUNG.md).
 
 ---
 
+## [0.2.0] – 2026-11-20
+
+### Hinzugefügt
+- `/.well-known/security.txt` (RFC 9116) mit Kontakt und Gültigkeit bis 2027-11-20
+- `robots.txt` und `sitemap.xml` für Suchmaschinen
+- `humans.txt` und `site.webmanifest`
+- `404.html` Fehlerseite
+- `.htaccess` mit Security-Headern, Cache und ErrorDocument (Apache)
+- Canonical-URLs, Twitter Cards, theme-color, apple-touch-icon auf allen Seiten
+- JSON-LD Structured Data (`ProfessionalService`) auf der Startseite
+
+### Geändert
+- Versionsnummer in `index.html` auf 0.2.0
+
+---
+
 ## [0.1.1] – 2026-11-20
 
 ### Hinzugefügt

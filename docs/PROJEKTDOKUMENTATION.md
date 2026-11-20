@@ -1,6 +1,6 @@
 # Projektdokumentation – MalamaWeb
 
-Stand: **2026-11-20** · Website-Version: **0.1.1**
+Stand: **2026-11-20** · Website-Version: **0.2.0**
 
 Malama IT GmbH – IT-Dienstleistungen in Ostösterreich.  
 Claim: „IT, die sich kümmert.“
@@ -11,29 +11,20 @@ Claim: „IT, die sich kümmert.“
 
 ```
 MalamaWeb/
-??? VERSION                 ? aktuelle Versionsnummer (eine Zeile)
-??? CHANGELOG.md            ? alle Änderungen mit Datum + Version
-??? README.md               ? Kurzüberblick + Deploy
+??? VERSION                      # aktuelle Versionsnummer
+??? CHANGELOG.md
+??? README.md
 ??? .gitignore
-??? theweb/                 ? ? ONLINE-INHALT (nur das deployen)
-?   ??? index.html          ? Startseite (enthält Versionsnummer)
-?   ??? kontakt.html
-?   ??? kosten.html         ? IT-Kostenkompass
-?   ??? hosting.html        ? Hosting-Detailkalkulation
-?   ??? referenzen.html
-?   ??? impressum.html
-?   ??? datenschutz.html
-?   ??? assets/
-?       ??? css/styles.css
-?       ??? fonts/          ? lokale DM Sans (DSGVO)
-?       ??? js/main.js, kompass.js, hosting-calc.js
-?       ??? images/
-??? docs/                   ? interne Dokumentation & Entwürfe
-?   ??? PROJEKTDOKUMENTATION.md  ? diese Datei
-?   ??? VERSIONIERUNG.md
-?   ??? *.docx / *.pdf      ? Feedback, Agentur-Entwürfe, Rechnungen
-??? calc/                   ? Excel-Kalkulationen (intern)
-??? Malama_Logo/            ? Logos, Vorlagen, Signatur
+??? theweb/                      # ? ONLINE-INHALT (nur das deployen)
+?   ??? index.html
+?   ??? kontakt.html, kosten.html, hosting.html, …
+?   ??? 404.html, robots.txt, sitemap.xml, humans.txt
+?   ??? site.webmanifest, .htaccess
+?   ??? .well-known/security.txt
+?   ??? assets/ (css, fonts, js, images)
+??? docs/                        # interne Doku & Entwürfe
+??? calc/                        # Excel-Kalkulationen
+??? Malama_Logo/
 ```
 
 | Ordner | Online? | Zweck |
@@ -72,6 +63,21 @@ Zielregion: **Ostösterreich**.
    - https://malama.at/kontakt.html
    - https://malama.at/kosten.html
    - https://malama.at/datenschutz.html
+   - https://malama.at/.well-known/security.txt
+   - https://malama.at/robots.txt
+   - https://malama.at/sitemap.xml
+
+### Professionelle Zusatzdateien
+
+| Datei | Zweck |
+|---|---|
+| `.well-known/security.txt` | Security-Kontakt (RFC 9116) |
+| `robots.txt` | Crawler-Hinweise + Sitemap-URL |
+| `sitemap.xml` | Seitenliste für Google & Co. |
+| `humans.txt` | Team-/Site-Hinweis |
+| `site.webmanifest` | PWA-/Homescreen-Metadaten |
+| `404.html` | Benutzerfreundliche Fehlerseite |
+| `.htaccess` | Security-Header & Caching (Apache) |
 
 ### Lokale Vorschau
 

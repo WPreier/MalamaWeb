@@ -1,0 +1,5 @@
+# Malama IT GmbH – https://malama.at
+User-agent: *
+Allow: /
+
+Sitemap: https://malama.at/sitemap.xml

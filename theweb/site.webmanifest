@@ -1,0 +1,24 @@
+{
+  "name": "Malama IT",
+  "short_name": "Malama",
+  "description": "IT, die sich kümmert – Betreuung, Hosting und Housing in Ostösterreich.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#173559",
+  "lang": "de-AT",
+  "icons": [
+    {
+      "src": "/assets/images/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/images/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

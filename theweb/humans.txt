@@ -1,0 +1,17 @@
+/* TEAM */
+Company: Malama IT GmbH
+Location: Pilgersdorf & Wolkersdorf, Österreich
+Contact: info@malama.at
+Phone: +43 670 3592519
+Site: https://malama.at
+
+/* THANKS */
+Claim: IT, die sich kümmert.
+Region: Ostösterreich
+
+/* SITE */
+Last update: 2026-11-20
+Language: Deutsch
+Standards: HTML5, CSS3, RFC 9116 security.txt
+Doctype: HTML5
+Software: Statische Website
