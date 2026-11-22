@@ -9,6 +9,17 @@ Regeln siehe [docs/VERSIONIERUNG.md](docs/VERSIONIERUNG.md).
 
 ---
 
+## [0.2.1] – 2026-11-22
+
+### Geändert
+- Startseite und globales CSS: professionellerer Auftritt (Typografie, Abstände, Hover, Fokus)
+- Hero: Markenzeile „Malama IT“, klarere Text-/Visual-Anordnung
+- Emoji-Icons durch SVG-Icons ersetzt (Leistungen, Vorteile, Theme-Toggle)
+- Header mit Blur und Scroll-Zustand; dezente Reveal-Animationen
+- Theme-Toggle und Scroll-Verhalten in `main.js` überarbeitet
+
+---
+
 ## [0.2.0] – 2026-11-20
 
 ### Hinzugefügt

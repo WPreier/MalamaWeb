@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="version" content="0.2.0">
-  <meta name="version-date" content="2026-11-20">
+  <meta name="version" content="0.2.1">
+  <meta name="version-date" content="2026-11-22">
   <title>Malama IT – IT, die sich kümmert | Ostösterreich</title>
   <meta name="description" content="Malama IT aus Pilgersdorf: persönliche IT-Betreuung, Hosting und Housing in Ostösterreich. Ein fixer Ansprechpartner, faire Preise, über 20 Jahre Erfahrung.">
   <meta name="author" content="Malama IT GmbH">
@@ -95,7 +95,7 @@
         </ul>
       </nav>
       <div class="header-controls">
-        <button id="theme-toggle" class="theme-toggle" aria-label="Dark/Light Mode">🌙</button>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Dark Mode"></button>
         <a href="kontakt.html" class="btn btn-sm">Jetzt anfragen →</a>
       </div>
     </div>
@@ -104,11 +104,8 @@
   <main>
     <section class="hero">
       <div class="container hero-inner">
-        <div class="hero-visual">
-          <img src="assets/images/swvoc_light.jpg" alt="Malama – wir kümmern uns" class="hero-img hero-img-light">
-          <img src="assets/images/swvoc_dark.jpg" alt="Malama – wir kümmern uns" class="hero-img hero-img-dark">
-        </div>
         <div class="hero-text">
+          <p class="hero-brand">Malama IT</p>
           <h1>IT, die sich kümmert.</h1>
           <p class="kicker">Persönlich. In Ostösterreich.</p>
           <p class="hero-sub">Betreuung, Hosting und Housing für Unternehmen – ein fixer Ansprechpartner statt Hotline. Ein Preis, den Sie verstehen.</p>
@@ -116,6 +113,10 @@
             <a href="kontakt.html" class="btn">Kostenloses Erstgespräch</a>
             <a href="kosten.html" class="btn btn-outline hero-btn-outline">Was kostet meine IT?</a>
           </div>
+        </div>
+        <div class="hero-visual">
+          <img src="assets/images/swvoc_light.jpg" alt="Malama – wir kümmern uns" class="hero-img hero-img-light">
+          <img src="assets/images/swvoc_dark.jpg" alt="Malama – wir kümmern uns" class="hero-img hero-img-dark">
         </div>
       </div>
     </section>
@@ -129,26 +130,32 @@
       </div>
     </div>
 
-    <section id="leistungen">
+    <section id="leistungen" class="reveal">
       <div class="container center">
         <p class="eyebrow">Leistungen</p>
         <h2>IT, die zu Ihren Anforderungen passt.</h2>
         <p class="lead">Sicher. Schnell. Kundenorientiert.</p>
         <div class="grid-3" style="text-align:left;">
           <article class="service-card">
-            <div class="icon">⚙</div>
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9c.3.6.9 1 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg>
+            </div>
             <h3>IT-Betreuung</h3>
             <p>Wir kümmern uns um Ihre laufende IT, damit Systeme stabil funktionieren, Probleme rasch gelöst werden und Sie einen Ansprechpartner haben, der erreichbar ist.</p>
             <a class="more" href="#ueber-uns">mehr erfahren →</a>
           </article>
           <article class="service-card">
-            <div class="icon">☁</div>
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M7 18a4.5 4.5 0 0 1-.4-9 6 6 0 0 1 11.3-1.7A4 4 0 0 1 17 18H7Z"/></svg>
+            </div>
             <h3>Hosting</h3>
             <p>Individuelle Hosting-Lösungen für Websites, E-Mails und Anwendungen – sicher, flexibel und auf Ihren Bedarf abgestimmt.</p>
             <a class="more" href="hosting.html">mehr erfahren →</a>
           </article>
           <article class="service-card">
-            <div class="icon">⌂</div>
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V20h14V9.5"/><path d="M10 20v-6h4v6"/></svg>
+            </div>
             <h3>Housing</h3>
             <p>Ihre Hardware in professioneller Infrastruktur in Österreich – mit Strom, Klima, Internetanbindung und physischer Sicherheit.</p>
             <a class="more" href="kontakt.html?topic=Housing">mehr erfahren →</a>
@@ -157,7 +164,7 @@
       </div>
     </section>
 
-    <section id="ueber-uns">
+    <section id="ueber-uns" class="reveal">
       <div class="container">
         <div class="about-grid">
           <div>
@@ -176,7 +183,9 @@
       </div>
       <div class="why-band">
         <div class="container why-inner">
-          <div class="hibiscus">✿</div>
+          <div class="hibiscus" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M24 8c1.5 4.5 1.2 8.2-.8 11.2 3.2-1.4 6.8-1.2 10.2.6-2.8 2.6-6.2 3.6-9.6 3.1 2.4 2.6 3.4 6 2.8 10.1-3.8-2-7.2-2.2-10.4-.4 1.1-3.6.4-7.2-1.8-10.2-2.4 2.8-3.4 6.2-2.8 10.2-3.2-1.8-6.6-1.6-10.4.4-.6-4.1.4-7.5 2.8-10.1-3.4.5-6.8-.5-9.6-3.1 3.4-1.8 7-2 10.2-.6C22.8 16.2 22.5 12.5 24 8Z"/></svg>
+          </div>
           <p class="eyebrow">Warum Malama?</p>
           <h2>Persönlich. Verlässlich. Verständlich.</h2>
           <div class="why-box">
@@ -187,17 +196,17 @@
       </div>
     </section>
 
-    <section>
+    <section class="reveal">
       <div class="container center">
         <p class="eyebrow">Vorteile</p>
         <h2>Was Sie mit Malama gewinnen.</h2>
         <div class="benefits-grid" style="text-align:left; margin-top:1.5rem;">
-          <div class="benefit"><span class="ico">▣</span> Verlässliche IT-Betreuung</div>
-          <div class="benefit"><span class="ico">⇄</span> Flexible Lösungen</div>
-          <div class="benefit"><span class="ico">☺</span> Persönliche Ansprechpartner</div>
-          <div class="benefit"><span class="ico">⚖</span> Faire Leistungen</div>
-          <div class="benefit"><span class="ico">💬</span> Verständliche Beratung</div>
-          <div class="benefit"><span class="ico">★</span> Über 20 Jahre Erfahrung</div>
+          <div class="benefit"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4.5 3 7.8 7 9 4-1.2 7-4.5 7-9V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg></span> Verlässliche IT-Betreuung</div>
+          <div class="benefit"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 7h11v3l4-4-4-4v3H5a2 2 0 0 0-2 2v4"/><path d="M17 17H6v-3l-4 4 4 4v-3h13a2 2 0 0 0 2-2v-4"/></svg></span> Flexible Lösungen</div>
+          <div class="benefit"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 19.5c1.8-3.2 4.2-4.8 7-4.8s5.2 1.6 7 4.8"/></svg></span> Persönliche Ansprechpartner</div>
+          <div class="benefit"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v18M5 8h14M7 8l-3 6h6L7 8Zm10 0-3 6h6l-3-6Z"/></svg></span> Faire Leistungen</div>
+          <div class="benefit"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 12a8.5 8.5 0 0 1-12.4 7.5L4 21l1.6-4.2A8.5 8.5 0 1 1 21 12Z"/></svg></span> Verständliche Beratung</div>
+          <div class="benefit"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 3 2.4 6.2L21 10l-4.8 4.2L17.6 21 12 17.8 6.4 21l1.4-6.8L3 10l6.6-.8L12 3Z"/></svg></span> Über 20 Jahre Erfahrung</div>
         </div>
       </div>
     </section>
@@ -209,7 +218,7 @@
       </div>
     </section>
 
-    <section id="unterschied">
+    <section id="unterschied" class="reveal">
       <div class="container center">
         <p class="eyebrow">Der Unterschied</p>
         <h2>So klingt der Unterschied.</h2>
@@ -243,7 +252,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="reveal">
       <div class="container center">
         <p class="eyebrow">Malama passt</p>
         <h2>Wann Malama passt.</h2>
@@ -297,7 +306,7 @@
           </a>
         </div>
       </div>
-      <div class="footer-bottom">© 2026 Malama IT GmbH · Website v0.2.0</div>
+      <div class="footer-bottom">© 2026 Malama IT GmbH · Website v0.2.1</div>
     </div>
   </footer>
 

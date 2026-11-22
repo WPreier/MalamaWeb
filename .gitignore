@@ -4,6 +4,7 @@ Thumbs.db
 node_modules/
 .vscode/
 .idea/
+.cursor/
 theweb/assets/fonts/dm-sans-raw.css
 *.tmp
 ~$*

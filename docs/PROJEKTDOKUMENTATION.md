@@ -1,6 +1,6 @@
 # Projektdokumentation – MalamaWeb
 
-Stand: **2026-11-20** · Website-Version: **0.2.0**
+Stand: **2026-11-22** · Website-Version: **0.2.1**
 
 Malama IT GmbH – IT-Dienstleistungen in Ostösterreich.  
 Claim: „IT, die sich kümmert.“
