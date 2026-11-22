@@ -1,4 +1,4 @@
-# Malama IT GmbH – https://malama.at
+# Malama IT GmbH â€“ https://malama.at
 User-agent: *
 Allow: /
 

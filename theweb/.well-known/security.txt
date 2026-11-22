@@ -1,4 +1,4 @@
-# Malama IT GmbH – Security Policy (RFC 9116)
+# Malama IT GmbH â€“ Security Policy (RFC 9116)
 # https://malama.at/.well-known/security.txt
 
 Contact: mailto:info@malama.at

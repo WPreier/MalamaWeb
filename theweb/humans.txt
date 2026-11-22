@@ -1,13 +1,13 @@
 /* TEAM */
 Company: Malama IT GmbH
-Location: Pilgersdorf & Wolkersdorf, Österreich
+Location: Pilgersdorf & Wolkersdorf, Ã–sterreich
 Contact: info@malama.at
 Phone: +43 670 3592519
 Site: https://malama.at
 
 /* THANKS */
-Claim: IT, die sich kümmert.
-Region: Ostösterreich
+Claim: IT, die sich kÃ¼mmert.
+Region: OstÃ¶sterreich
 
 /* SITE */
 Last update: 2026-11-20

@@ -9,6 +9,15 @@ Regeln siehe [docs/VERSIONIERUNG.md](docs/VERSIONIERUNG.md).
 
 ---
 
+## [0.2.2] ñ 2026-11-22
+
+### Behoben
+- Encoding: `kontakt.html`, `kosten.html`, `datenschutz.html`, `404.html` sowie `humans.txt`, `robots.txt`, `security.txt` von Windows-1252 nach UTF-8
+- Darstellungsfehler bei Umlauten und Sonderzeichen (ù) auf betroffenen Seiten
+- Kaputte Pfeile/`??` in CTAs und Theme-Toggle vereinheitlicht
+
+---
+
 ## [0.2.1] ñ 2026-11-22
 
 ### Ge‰ndert
