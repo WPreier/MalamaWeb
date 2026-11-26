@@ -1,72 +1,85 @@
 # Changelog
 
-Alle wesentlichen Änderungen an diesem Projekt werden hier dokumentiert.
+Alle wesentlichen Ã„nderungen an diesem Projekt werden hier dokumentiert.
 
 Format: **Semantic Versioning** `MAJOR.MINOR.PATCH`  
-Beispiel: `0.1.1` ? Major `0`, Minor `1`, Patch `1`
+Beispiel: `0.1.1` â†’ Major `0`, Minor `1`, Patch `1`
 
 Regeln siehe [docs/VERSIONIERUNG.md](docs/VERSIONIERUNG.md).
 
 ---
 
-## [0.2.2] – 2026-11-22
+## [0.2.3] â€“ 2026-11-27
+
+### HinzugefÃ¼gt
+- Content-Security-Policy und Referrer-Policy als Meta in allen HTML-Seiten
+- VollstÃ¤ndige Security-Header in `.htaccess` (Apache), `web.config` (IIS) und `_headers` (Netlify/Cloudflare)
+- HSTS, Permissions-Policy, COOP/CORP, X-Frame-Options, nosniff, HTTPS-Redirect fÃ¼r malama.at
+- Externe Links mit `rel="noopener noreferrer"`
+
+### GeÃ¤ndert
+- Versionsnummer auf 0.2.3
+
+---
+
+## [0.2.2] â€“ 2026-11-22
 
 ### Behoben
 - Encoding: `kontakt.html`, `kosten.html`, `datenschutz.html`, `404.html` sowie `humans.txt`, `robots.txt`, `security.txt` von Windows-1252 nach UTF-8
-- Darstellungsfehler bei Umlauten und Sonderzeichen () auf betroffenen Seiten
-- Kaputte Pfeile/`??` in CTAs und Theme-Toggle vereinheitlicht
+- Darstellungsfehler bei Umlauten und Sonderzeichen auf betroffenen Seiten
+- Kaputte Pfeile in CTAs und Theme-Toggle vereinheitlicht
 
 ---
 
-## [0.2.1] – 2026-11-22
+## [0.2.1] â€“ 2026-11-22
 
-### Geändert
-- Startseite und globales CSS: professionellerer Auftritt (Typografie, Abstände, Hover, Fokus)
-- Hero: Markenzeile „Malama IT“, klarere Text-/Visual-Anordnung
+### GeÃ¤ndert
+- Startseite und globales CSS: professionellerer Auftritt (Typografie, AbstÃ¤nde, Hover, Fokus)
+- Hero: Markenzeile â€Malama ITâ€œ, klarere Text-/Visual-Anordnung
 - Emoji-Icons durch SVG-Icons ersetzt (Leistungen, Vorteile, Theme-Toggle)
 - Header mit Blur und Scroll-Zustand; dezente Reveal-Animationen
-- Theme-Toggle und Scroll-Verhalten in `main.js` überarbeitet
+- Theme-Toggle und Scroll-Verhalten in `main.js` Ã¼berarbeitet
 
 ---
 
-## [0.2.0] – 2026-11-20
+## [0.2.0] â€“ 2026-11-20
 
-### Hinzugefügt
-- `/.well-known/security.txt` (RFC 9116) mit Kontakt und Gültigkeit bis 2027-11-20
-- `robots.txt` und `sitemap.xml` für Suchmaschinen
+### HinzugefÃ¼gt
+- `/.well-known/security.txt` (RFC 9116) mit Kontakt und GÃ¼ltigkeit bis 2027-11-20
+- `robots.txt` und `sitemap.xml` fÃ¼r Suchmaschinen
 - `humans.txt` und `site.webmanifest`
 - `404.html` Fehlerseite
 - `.htaccess` mit Security-Headern, Cache und ErrorDocument (Apache)
 - Canonical-URLs, Twitter Cards, theme-color, apple-touch-icon auf allen Seiten
 - JSON-LD Structured Data (`ProfessionalService`) auf der Startseite
 
-### Geändert
+### GeÃ¤ndert
 - Versionsnummer in `index.html` auf 0.2.0
 
 ---
 
-## [0.1.1] – 2026-11-20
+## [0.1.1] â€“ 2026-11-20
 
-### Hinzugefügt
+### HinzugefÃ¼gt
 - Kontaktseite `theweb/kontakt.html` mit Anfrageformular und Durchwahlen
 - IT-Kostenkompass-Seite `theweb/kosten.html` (Einbindung von `kompass.js`)
-- Datenschutzerklärung `theweb/datenschutz.html`
+- DatenschutzerklÃ¤rung `theweb/datenschutz.html`
 - Lokale DM-Sans-Schriftarten unter `theweb/assets/fonts/` (ohne Google Fonts)
 - Favicon und Open-Graph-Bild
 - Meta-Descriptions und OG-Tags auf allen Seiten
 - Sticky-Mobile-Leiste (Anrufen / Anfrage senden)
-- Abschnitt „So klingt der Unterschied“ auf der Startseite
-- Trust-Leiste unter dem Hero (Erfahrung, RZ Österreich, Rückmeldung, Standorte)
+- Abschnitt â€So klingt der Unterschiedâ€œ auf der Startseite
+- Trust-Leiste unter dem Hero (Erfahrung, RZ Ã–sterreich, RÃ¼ckmeldung, Standorte)
 - Projektdokumentation und Versionierung (`docs/PROJEKTDOKUMENTATION.md`, `docs/VERSIONIERUNG.md`)
 
-### Geändert
-- Zielregion: Ostösterreich
-- Navigation: PPC-Logo vom Header in den Footer; Menüpunkt „Kosten“; CTAs auf Kontaktseite
-- Hero: Claim, Subline, Buttons „Erstgespräch“ und „Was kostet meine IT?“
+### GeÃ¤ndert
+- Zielregion: OstÃ¶sterreich
+- Navigation: PPC-Logo vom Header in den Footer; MenÃ¼punkt â€Kostenâ€œ; CTAs auf Kontaktseite
+- Hero: Claim, Subline, Buttons â€ErstgesprÃ¤châ€œ und â€Was kostet meine IT?â€œ
 - Referenzen: Platzhalter durch Trust-Block ersetzt
-- Hosting: Hinweis auf interne Kalkulation entfernt, „netto“ statt „VK“, Link zum Kompass
+- Hosting: Hinweis auf interne Kalkulation entfernt, â€nettoâ€œ statt â€VKâ€œ, Link zum Kompass
 - Impressum: Fokus auf Rechtliches, Verweis auf Kontakt und Datenschutz
-- Footer: „Made with Grok“ entfernt; Datenschutz-Link; PPC-Logo
+- Footer: â€Made with Grokâ€œ entfernt; Datenschutz-Link; PPC-Logo
 - Signatur: Standort Leobendorf entfernt
 
 ### Behoben
@@ -74,9 +87,9 @@ Regeln siehe [docs/VERSIONIERUNG.md](docs/VERSIONIERUNG.md).
 
 ---
 
-## [0.1.0] – 2026-11-20
+## [0.1.0] â€“ 2026-11-20
 
-### Hinzugefügt
+### HinzugefÃ¼gt
 - Initiale statische Website (`theweb/`)
 - Logos, Feedback-Dokumente, Hosting-/Server-Kalkulationen
 - Erstes Repository-Setup auf GitHub (`WPreier/MalamaWeb`)

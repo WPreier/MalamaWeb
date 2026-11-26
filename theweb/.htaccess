@@ -1,33 +1,64 @@
-# Malama IT – Apache-Empfehlungen (falls der Hoster Apache nutzt)
-# Ohne Wirkung auf Nginx/IIS – dann entsprechende Header dort setzen.
+# Malama IT – Security & Performance (Apache)
+# Gilt nur, wenn der Hoster Apache + mod_headers nutzt.
 
 Options -Indexes
 ServerSignature Off
+FileETag None
 
+# Sicherheits-Header
 <IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
   Header always set X-Content-Type-Options "nosniff"
   Header always set X-Frame-Options "SAMEORIGIN"
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
-  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+  Header always set Permissions-Policy "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=(), interest-cohort=()"
   Header always set Cross-Origin-Opener-Policy "same-origin"
+  Header always set Cross-Origin-Resource-Policy "same-origin"
+  Header always set X-Permitted-Cross-Domain-Policies "none"
+  Header always set X-XSS-Protection "0"
+  Header always set Content-Security-Policy "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; frame-src 'none'; worker-src 'none'; manifest-src 'self'; media-src 'self'; font-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; connect-src 'self'; form-action 'self' mailto:; upgrade-insecure-requests"
+  Header unset X-Powered-By
+  Header always unset X-Powered-By
 </IfModule>
 
+# HTTPS nur für die Produktivdomain erzwingen
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  # HTTPS erzwingen (aktivieren, wenn SSL aktiv und kein Proxy-Konflikt)
-  # RewriteCond %{HTTPS} !=on
-  # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+  RewriteCond %{HTTP_HOST} ^(www\.)?malama\.at$ [NC]
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://malama.at%{REQUEST_URI} [L,R=301]
+
+  # www ? apex
+  RewriteCond %{HTTP_HOST} ^www\.malama\.at$ [NC]
+  RewriteRule ^ https://malama.at%{REQUEST_URI} [L,R=301]
 </IfModule>
 
 ErrorDocument 404 /404.html
 
-# Lange Cache-Zeit für Fonts und statische Assets
+# Keine Ausführung von Skripten in Upload-/Asset-Ordnern (Vorsicht)
+<IfModule mod_authz_core.c>
+  <FilesMatch "\.(htaccess|htpasswd|ini|log|sh|sql|bak)$">
+    Require all denied
+  </FilesMatch>
+</IfModule>
+
+# MIME-Typen absichern
+<IfModule mod_mime.c>
+  AddType text/javascript .js
+  AddType text/css .css
+  AddType font/woff2 .woff2
+  AddType application/manifest+json .webmanifest
+</IfModule>
+
+# Lange Cache-Zeit für Fonts und Assets
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresByType text/css "access plus 7 days"
+  ExpiresByType text/javascript "access plus 7 days"
   ExpiresByType application/javascript "access plus 7 days"
   ExpiresByType font/woff2 "access plus 30 days"
   ExpiresByType image/jpeg "access plus 14 days"
   ExpiresByType image/png "access plus 14 days"
   ExpiresByType image/webp "access plus 14 days"
+  ExpiresByType image/svg+xml "access plus 14 days"
 </IfModule>

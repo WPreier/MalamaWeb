@@ -2,7 +2,7 @@
 
 Website-Quellen, Dokumentation und Kalkulationen für **Malama IT GmbH** (Pilgersdorf / Wolkersdorf, Ostösterreich).
 
-**Aktuelle Version: [0.2.0](CHANGELOG.md)** (2026-11-20)  
+**Aktuelle Version: [0.2.3](CHANGELOG.md)** (2026-11-27)  
 Claim: „IT, die sich kümmert“.
 
 ## Dokumentation

@@ -1,6 +1,6 @@
 # Projektdokumentation – MalamaWeb
 
-Stand: **2026-11-22** · Website-Version: **0.2.2**
+Stand: **2026-11-27** · Website-Version: **0.2.3**
 
 Malama IT GmbH – IT-Dienstleistungen in Ostösterreich.  
 Claim: „IT, die sich kümmert.“
@@ -78,6 +78,13 @@ Zielregion: **Ostösterreich**.
 | `site.webmanifest` | PWA-/Homescreen-Metadaten |
 | `404.html` | Benutzerfreundliche Fehlerseite |
 | `.htaccess` | Security-Header & Caching (Apache) |
+| `web.config` | Security-Header (IIS) |
+| `_headers` | Security-Header (Netlify / Cloudflare Pages) |
+
+### Security (ab 0.2.3)
+
+In **allen HTML-Seiten**: Content-Security-Policy + Referrer-Policy (Meta).  
+Vollständige HTTP-Header (HSTS, X-Frame-Options, nosniff, Permissions-Policy, COOP/CORP, CSP mit `frame-ancestors`) kommen über `.htaccess` / `web.config` / `_headers` – je nach Hoster die passende Datei mit deployen.
 
 ### Lokale Vorschau
 

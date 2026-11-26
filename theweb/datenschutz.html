@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Security (HTML-seitig; vollständige Header via .htaccess / web.config / _headers) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; worker-src 'none'; manifest-src 'self'; media-src 'self'; font-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; connect-src 'self'; form-action 'self' mailto:; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Datenschutzerklärung – Malama IT</title>
   <meta name="description" content="Datenschutzerklärung der Malama IT GmbH.">
   <meta name="theme-color" content="#173559">
@@ -84,7 +87,7 @@
 
         <div class="impressum-block">
           <h2>7. Ihre Rechte</h2>
-          <p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit sowie Widerspruch gegen die Verarbeitung (soweit anwendbar). Beschwerden können Sie an die Österreichische Datenschutzbehörde richten: <a href="https://www.dsb.gv.at" target="_blank" rel="noopener">www.dsb.gv.at</a>.</p>
+          <p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit sowie Widerspruch gegen die Verarbeitung (soweit anwendbar). Beschwerden können Sie an die Österreichische Datenschutzbehörde richten: <a href="https://www.dsb.gv.at" target="_blank" rel="noopener noreferrer">www.dsb.gv.at</a>.</p>
         </div>
 
         <div class="impressum-block">
@@ -119,7 +122,7 @@
             <a href="impressum.html">Impressum</a>
             <a href="datenschutz.html">Datenschutz</a>
           </div>
-          <a href="https://ppc.at" target="_blank" rel="noopener" class="footer-ppc" title="PPC">
+          <a href="https://ppc.at" target="_blank" rel="noopener noreferrer" class="footer-ppc" title="PPC">
             <img src="assets/images/ppc_logo.jpg" alt="PPC">
           </a>
         </div>
